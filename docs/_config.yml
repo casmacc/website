@@ -1,0 +1,40 @@
+title: Casmacc
+dev_email: andy@r210.com
+email: andy@r210.com
+description: "Casmacc Information"
+url: https://casmacc.io
+github_username:  casmac
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+safe: false
+
+permalink: /blog/:year/:month/:day/:title/
+
+show_downloads: false
+google_analytics: TBD
+
+tagline: TBD
+paginate:            1
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+author: Casmacc 
+
+analytics_id: TBD
+
+disqus:
+  shortname: TBD
+
+excerpt_separator: <!--more-->
