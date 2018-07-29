@@ -6,6 +6,10 @@ permalink: /about/
 navigation_weight: 10
 ---
 
+<style>
+  .btn-sm { padding-top: 0; padding-bottom: 0}
+</style>
+
 <div class='jumbotron text-center' style="margin-bottom: 20px; padding: 20px;">
   <p>
     <b>Containerized Apps for Social Marketing And Customer Communication</b>
@@ -46,53 +50,147 @@ navigation_weight: 10
 
 For interoperability, we standardize on common software infrastructure:
 <table class='table table-sm'>
+
   <tr>
     <td>Containers</td>
-    <td>
+    <td colspan=2>
       <a href="https://docker.com">Docker</a>
     </td>
     <td>
-      <a href="https://www.docker.com/">Docker</a>, 
-      <a href="https://docs.docker.com/compose/">Docker Compose</a> and 
-      <a href="https://blog.docker.com/2018/07/making-application-collaboration-easier-docker-application-packages/">Docker Application</a>
+      <a href="https://www.docker.com/">Docker</a> and
+      <a href="https://docs.docker.com/compose/">Docker Compose</a> 
     </td>
   </tr>
+
+  <tr>
+    <td>APIs</td>
+    <td colspan=2>
+      <a href="https://graphql.org/">GraphQL</a>
+    </td>
+    <td>
+      GraphQL is a query language for your API
+    </td>
+  </tr>
+
   <tr>
     <td>Messaging</td>
     <td>
       <a href="https://nats.io">NATS Streaming</a>
     </td>
+    <td align=center>
+      <a href="https://hub.docker.com/_/nats-streaming/" target="_blank">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <i class='fab fa-docker'></i>
+        </button>
+      </a>
+    </td>
     <td>
       like Kafka, but smaller / faster / simpler
     </td>
   </tr>
+
   <tr>
     <td>Configuration</td>
     <td>
       <a href="https://www.consul.io/">Consul</a>
     </td>
+    <td align=center>
+      <a href="https://hub.docker.com/_/consul/" target="_blank">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <i class='fab fa-docker'></i>
+        </button>
+      </a>
+    </td>
     <td>
       distributed k/v store
     </td>
   </tr>
+
   <tr>
     <td>Secrets</td>
     <td>
-      <a href="https://www.vaultproject.io/">Vault Project</a>
+      <a href="https://www.vaultproject.io/">Vault</a>
+    </td>
+    <td align=center>
+      <a href="https://hub.docker.com/_/vault/" target="_blank">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <i class='fab fa-docker'></i>
+        </button>
+      </a>
     </td>
     <td>
       for managing secret keys and credentials
     </td>
   </tr>
+
   <tr>
-    <td>APIs</td>
+    <td>K/V Store</td>
     <td>
-      <a href="https://graphql.org/">GraphQL</a>
+      <a href="https://redis.io/">Redis</a>
+    </td>
+    <td align=center>
+      <a href="https://hub.docker.com/_/redis/" target="_blank">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <i class='fab fa-docker'></i>
+        </button>
+      </a>
     </td>
     <td>
-      simpler and more flexible than restful APIs
+      in-memory data store
     </td>
   </tr>
+
+  <tr>
+    <td>RDMBS</td>
+    <td>
+      <a href="https://www.postgresql.org/">Postgres</a>
+    </td>
+    <td align=center>
+      <a href="https://hub.docker.com/_/postgres/" target="_blank">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <i class='fab fa-docker'></i>
+        </button>
+      </a>
+    </td>
+    <td>
+      relational database
+    </td>
+  </tr>
+
+  <tr>
+    <td>Time-Series DB</td>
+    <td>
+      <a href="https://www.influxdata.com/">InfluxDB</a>
+    </td>
+    <td align=center>
+      <a href="https://hub.docker.com/_/influx/" target="_blank">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <i class='fab fa-docker'></i>
+        </button>
+      </a>
+    </td>
+    <td>
+      time-series data
+    </td>
+  </tr>
+
+  <tr>
+    <td>Visualization</td>
+    <td>
+      <a href="https://grafana.com/">Grafana</a>
+    </td>
+    <td align=center>
+      <a href="https://hub.docker.com/grafana/grafana/" target="_blank">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <i class='fab fa-docker'></i>
+        </button>
+      </a>
+    </td>
+    <td>
+      visualization, analytics and monitoring
+    </td>
+  </tr>
+
 </table>
 
 <div class='row'>
