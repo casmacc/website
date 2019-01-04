@@ -12,6 +12,23 @@
     </div>
 
     {% include footer.html %}
+    {% if jekyll.environment == "development" %}
+      <script>
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+          w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+          m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','http://hana:8080/mtc.js','mt');
+        mt('send', 'pageview');
+      </script>
+    {% else %}
+      <script>
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+          w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+          m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','http://bugmark.tech:8090/mtc.js','mt');
+        mt('send', 'pageview');
+      </script>
+    {% endif %}
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <script src="/js/jquery.scrollUp.min.js"></script>
     <script type="text/javascript">$(function() { $("#toTop").scrollToTop(50); });</script>
