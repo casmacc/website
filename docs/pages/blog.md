@@ -2,5 +2,5 @@
 layout: home
 title: Blog
 permalink: /blog/index.html
-navigation_weight: -1
+navigation_weight: 20
 ---
